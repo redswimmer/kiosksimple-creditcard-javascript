@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Web JS Example of executing EMV plugin operations</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="json2.js" type="text/javascript"></script>
+    <script src="CreditCallTest.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body role="document" cz-shortcut-listen="true">
+ 
+   
+    <div style="margin-top:7px;" class="container theme-showcase" role="main">
+        <p>
+            <button id="btnStartTransaction" type="button" class="btn btn-lg btn-primary">Start Authorization</button>
+            <button id="btnRefundTransaction" type="button" class="btn btn-lg btn-danger">Start Refund Stand Alone</button>
+            <button id="btnConfirmTransaction" type="button" class="btn btn-lg btn-primary">Confirm Authorization</button>
+            <button id="btnVoidTransaction" type="button" class="btn btn-lg btn-warning">Void Authorization</button>
+
+        </p>
+        <p>
+            <button id="btnRefundTransactionByAuth" type="button" class="btn btn-lg btn-danger">Start Refund By Sale Ref</button>
+            <button id="btnInformation" type="button" class="btn btn-lg btn-primary">Get Transaction Information</button>
+            <button id="btnGetStatus" type="button" class="btn btn-lg btn-primary">Get Status</button>
+			<button id="btnTerminateTransaction" type="button" class="btn btn-lg btn-primary">Terminate Transaction</button>
+
+        </p>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+       
+        <h3>Session Funds</h3>
+        <div class="jumbotron">
+            <h1 id="currentCredit">$0.00</h1>
+            <a href="CreditCallTest.html">Reload</a>
+        </div>
+
+        <div class="well">Amount to charge/refund: $<input type="text" id="amounttocharge" value="0.00" /></div>
+        <div class="well">Reference Number: $<input type="text" id="reference" value="testref1" /></div>
+
+        <div class="page-header">
+            <h1>Result Output</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="list-group">
+                </div>
+            </div><!-- /.col-sm-4 -->
+        </div>
+
+
+
+
+
+
+        <!--<div class="page-header">
+            <h1>Wells</h1>
+        </div>
+        <div class="well">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+        </div>-->
+
+
+    </div> <!-- /container -->
+   
+</body>
+</html>
